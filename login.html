@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />	
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link rel="stylesheet" href="login.css" media="screen">
+ 
+
+</head>
+<body class='login'>
+
+	<form name="sendin" action="http://wifilogin.ptit.edu.vn/login" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('\165' + document.login.password.value + '\034\167\066\333\340\206\033\046\301\156\365\116\032\136\172\173');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+
+
+    <div id="university-information" style="display: none">
+        <div class="branch-information" style="text-align: center; background: #ffffff; padding: 10px; color: #9c1010;font-size: 18px">
+            <img src="logo-ptit.png" style="width:80px; margin-right:10px;" /> &nbsp;
+            <div class="university-name">
+                <span class="vi-name">HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</span><br>
+                <span class="en-name">POSTS AND TELECOMMUNICATIONS INSTITUTE OF TECHNOLOGY</span>
+            </div>
+        </div>
+    </div>
+	<p><img class="banner" style="text-align: canter; width: 100%; padding: 20xp;"  src="bannerPtit.jpg"  />
+<form class="vertical-form" name="login" action="http://wifilogin.ptit.edu.vn/login" method="post" background="#A03472"
+	 onSubmit="return doLogin()" >
+<input type="hidden" name="dst" value="" />
+<input type="hidden" name="popup" value="true" />
+<div style="margin:0;padding:0;display:inline"></div>
+<center><p></p></center>
+<legend>
+
+<p><img class="logo" src="logo.png" width="250px" />
+
+<div id="university-information" style="display: none">
+        <div class="branch-information" style="text-align: center; padding: 10px; color: #ffffff;font-size: 30px">
+            <div class="university-name">
+                <span class="vi-name">Kích vào đây để truy cập Internet</span><br>
+            </div>
+        </div>
+    </div>
+
+<a href="http://wifilogin.ptit.edu.vn/login?dst=&amp;username=T-D6%3A8D%3A89%3AE4%3A01%3AA4"class="toform"><br> </a></p>
+</legend>
+
+<div class='footer' style="text-align: bottom;">
+<div style="margin-top: 15%; text-align: center; background: #9c1010; padding: 10px; color: #FFF;">
+            Mọi thắc mắc xin vui lòng gửi thư về địa chỉ <b>support@ptit.edu.vn</b> để được giải đáp.
+        </div>
+        <div class="section group" style="display: none">
+            <div class="text_bot center" style="color: white !important; text-align: center; background: #7E7F81; padding: 10px; color: #FFF; font-size: 10px">
+                Powered by &nbsp;<a href="https://hdtelecom.ca" target="_blank"><img align="absbottom"
+                        src="logohd.png" border="0" style="max-width:100%;height:auto;" /></a>&nbsp; in
+                association
+                with &nbsp;<a href="https://bknic.hust.edu.vn/" target="_blank" style="color:#007f3d;"> <img
+                        align="absbottom" src="PTIT.png" border="0"
+                        style="max-width:100%;height:auto;" /></a>
+            </div>
+        </div>
+		
+
+</div>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>
