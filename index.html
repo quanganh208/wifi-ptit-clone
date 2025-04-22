@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Always force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="hdtelecom.ca" />
+    <meta http-equiv="cleartype" content="on" />
+    <!--  <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" /> -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/css.css" />
+    <title>PTIT - Học viện Công nghệ Bưu chính Viễn thông</title>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <form
+      name="sendin"
+      action="https://wifilogin.ptit.edu.vn/login"
+      method="post"
+    >
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="https://portal.ptit.edu.vn//" />
+      <input type="hidden" name="popup" value="false" />
+      <!-- <input id="id_mac" name="mac" type="hidden" value="D6:8D:89:E4:01:A4">
+        <input id="id_ip" name="ip" type="hidden" value="10.21.101.71">
+        <input name="link_login" type="hidden" value="$(link_login)">
+        <input name="link_login_only" type="hidden" value="$(link_login_only)">
+        <input id="id_os" name="link_orig" type="hidden" value="$(link_orig)">
+        <input name="error" type="hidden" value="">
+        <input name="dst" type="hidden" value="$(dst)">
+        <input type="hidden" name="popup" value="false" /> -->
+    </form>
+    <script type="text/javascript">
+      function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = document.login.preset_password.value;
+        document.sendin.submit();
+        return true;
+      }
+    </script>
+    <div id="university-information">
+      <div class="branch-information">
+        <img
+          src="dist/img/logo-ptit.png"
+          style="width: 90px; float: left; margin-right: 10px"
+        />
+        <div class="university-name">
+          <span class="vi-name">HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</span
+          ><br />
+          <span class="en-name"
+            >Posts and Telecommunications Institute of Technology</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="general" style="text-align: center">
+      <div class="card-header">
+        <p class="wellcome">Welcome to</p>
+        <span class="branch-line"> PTIT </span>
+      </div>
+
+      <div class="general" align="center">
+        <form name="login" method="POST" style="margin-bottom: 0px; width: 70%">
+          <input type="hidden" name="dst" value="https://portal.ptit.edu.vn" />
+          <input type="hidden" name="popup" value="false" />
+          <div class="left-form" style="clear: both">
+            <strong
+              style="
+                margin-bottom: 20px;
+                float: left;
+                padding-top: 3px;
+                color: #ffffff;
+              "
+              >Username :</strong
+            >
+            <input
+              id="id_username"
+              placeholder="Nhập username không có @stu.ptit.edu"
+              style="
+                padding-bottom: 0px;
+                margin-left: 13px;
+                float: left;
+                height: 30px;
+                width: 200px;
+                border: none;
+                margin-bottom: 0px;
+                padding-left: 5px;
+                font-size: 9px;
+              "
+              name="username"
+              maxlength="25"
+              type="text"
+            />
+          </div>
+          <div class="left-form" style="clear: both">
+            <strong
+              style="
+                margin-bottom: 6px;
+                float: left;
+                padding-top: 3px;
+                color: #ffffff;
+              "
+              >Password :</strong
+            >
+            <input
+              id="myInput"
+              placeholder="Password email"
+              style="
+                padding-bottom: 0px;
+                margin-left: 16px;
+                float: left;
+                height: 30px;
+                width: 200px;
+                border: none;
+                padding-left: 5px;
+                font-size: 9px;
+              "
+              name="preset_password"
+              maxlength="25 "
+              type="password"
+            />
+          </div>
+          <br />
+          <br />
+        </form>
+      </div>
+
+      <div class="section group">
+        <div class="col span_1_of_1 btn_login" style="margin-bottom: 0px">
+          <a href="javascript:doLogin()">
+            <img
+              src="dist/img/connect.png"
+              border="0"
+              style="max-width: 30%; height: auto"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div
+        style="
+          margin-top: 10%;
+          text-align: center;
+          background: #9c1010;
+          padding: 10px;
+          color: #fff;
+          font-size: 15px;
+        "
+      >
+        Lưu ý: Quý người dùng sử dụng tài khoản Email và mật khẩu của Email để
+        đăng nhập kết nối mạng Internet.
+      </div>
+      <div class="section group" style="display: none">
+        <div
+          class="col span_1_of_1 text_bot"
+          style="color: white !important; text-align: center"
+        >
+          Powered by
+          <a href="https://hdtelecom.ca" target="_blank">
+            <img
+              align="absbottom"
+              src="dist/img/HD_Telecom.png"
+              border="0"
+              style="max-width: 100%; height: auto"
+          /></a>
+          in association with
+          <a
+            href="https://bknic.hust.edu.vn/"
+            target="_blank"
+            style="color: #007f3d"
+          >
+            <img
+              align="absbottom"
+              src="dist/img/HUST_logo.png"
+              border="0"
+              style="max-width: 100%; height: auto"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

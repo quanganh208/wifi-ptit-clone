@@ -1,0 +1,284 @@
+/* CSS Document */
+body {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Avant Garde", Tahoma, "Century Gothic", CenturyGothic,
+    AppleGothic, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#university-information {
+  height: 145px;
+  width: 100%;
+  transform: translateY(50%);
+  background-color: white;
+}
+
+.branch-information {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+.university-name {
+  padding-top: 2%;
+  font-weight: bold;
+}
+.vi-name {
+  color: #d7182a;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.en-name {
+  color: #001789;
+  margin-left: 10px;
+  font-size: 21px;
+}
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px !important;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 0% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF TWO  */
+.general {
+  display: block;
+  max-width: 600px;
+  margin: auto auto auto auto;
+  padding: 0px 0px 0px 0px;
+  margin-top: 8%;
+}
+
+.card-header {
+  color: white;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.wellcome {
+  font-size: 1.5em;
+  font-weight: 550;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.branch-line {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.5em;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 4px solid #d11616;
+  padding-bottom: 2px;
+  color: red;
+}
+
+.span_1_of_1 {
+  width: 100%;
+}
+.text_welcome {
+  font-family: UVN Sach Vo;
+  font-size: 32px;
+  line-height: 100%;
+  color: #da251d;
+  padding: 2px 0px 2px 0px;
+}
+.span1 {
+  font-size: 29px;
+}
+
+.span2 {
+  font-size: 32px;
+  font-family: "Helvetica Neue", arial, helvetica, helve, sans-serif !important;
+}
+.text_connect {
+  font-family: UTM Avo;
+  font-size: 25px;
+  line-height: 120%;
+  color: #da251d;
+  padding: 8px 0px 8px 0px;
+}
+.text_bot {
+  font-family: UTM Avo;
+  font-size: 18px;
+  line-height: 140%t;
+  color: #da251d;
+  padding: 20px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+  background: #7e7f81;
+}
+
+.logo img {
+  width: 30%;
+}
+
+.footer a {
+  color: #fff;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 1024px) {
+  .branch-information {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .col {
+    margin: 0% 0% 0% 0%;
+  }
+  .general {
+    display: block;
+    margin: auto auto auto auto;
+    padding: 0px 0px 0px 0px;
+  }
+  .text_welcome {
+    font-size: 32px;
+  }
+  .span1 {
+    font-size: 20px;
+  }
+  .span2 {
+    font-size: 25px;
+  }
+  .text_connect {
+    font-size: 23px;
+    padding: 9px 0px 9px 0px;
+  }
+  .text_bot {
+    font-size: 15px;
+    line-height: 140%t;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+  }
+  .text_bot img {
+    width: 15%;
+  }
+  .btn_login img {
+    max-width: 60% !important;
+  }
+  .logo img {
+    width: 40%;
+  }
+  .span_1_of_1 {
+    width: 100%;
+  }
+  #university-information {
+    height: 85px;
+  }
+
+  .branch-information {
+    width: 95%;
+  }
+
+  .branch-information img {
+    width: 40px !important;
+  }
+  .vi-name {
+    font-size: 12px;
+  }
+  .en-name {
+    font-size: 10px;
+  }
+  .card-header {
+    margin-top: 15%;
+  }
+  .general form {
+    width: 100% !important;
+    margin-top: 15px;
+  }
+
+  .general .left-form {
+    margin-left: 30px;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .vi-name {
+    font-size: 12px;
+  }
+  .en-name {
+    font-size: 10px;
+  }
+
+  .span1 {
+    font-size: 17px;
+  }
+
+  .span2 {
+    font-size: 20px;
+  }
+
+  .text_welcome {
+    font-size: 28px;
+  }
+
+  .text_connect {
+    font-size: 16px;
+    padding: 1px 0px 1px 1px;
+  }
+
+  .logo img {
+    width: 35%;
+  }
+}
+
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
